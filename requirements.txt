@@ -1,0 +1,10 @@
+langgraph
+pydantic
+openpyxl 
+numpy 
+pandas 
+yfinance 
+langchain 
+langchain-google-genai
+python-dotenv
+streamlit
