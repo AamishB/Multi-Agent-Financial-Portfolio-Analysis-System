@@ -186,7 +186,7 @@ def render_result(result: Dict[str, Any]) -> None:
                         "Calculated volatility": [risk.get("calculated_volatility")],
                     },
                     hide_index=True,
-                    use_container_width=True,
+                    width="stretch",
                 )
         else:
             st.info("The workflow returned no market data.")
@@ -233,7 +233,7 @@ query = st.text_area(
     help="Describe the portfolio question and include the ticker symbols you want analyzed.",
 )
 
-run_analysis = st.button("Run orchestration", type="primary", use_container_width=True)
+run_analysis = st.button("Run orchestration", type="primary")
 
 if run_analysis:
     if not query.strip():
